@@ -1,0 +1,59 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:backgroundTint="#ffffff"
+    android:padding="16dp"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="60dp"
+        android:text="MovRank"
+        />
+
+    <EditText
+        android:id="@+id/editTextMovieName"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:hint="Nazwa filmu"
+        android:inputType="text" />
+
+    <Spinner
+        android:id="@+id/spinnerGenre"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:entries="@array/genres" />
+
+    <EditText
+        android:id="@+id/editTextRating"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:hint="Ocena (1-5)"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/buttonAdd"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="Dodaj" />
+
+    <Spinner
+        android:id="@+id/spinnerSortBy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/sorting_options" />
+
+    <ListView
+        android:id="@+id/listViewMovies"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:dividerHeight="1dp" />
+</LinearLayout>

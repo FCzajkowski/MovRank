@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Movie Rating App</string>
+    <string-array name="genres">
+        <item>Akcja</item>
+        <item>Komedia</item>
+        <item>Horror</item>
+        <item>Sci-Fi</item>
+    </string-array>
+    <!-- Add sorting options to the strings.xml -->
+    <string-array name="sorting_options">
+        <item>Sortuj po nazwie</item>
+        <item>Sortuj po ocenie</item>
+    </string-array>
+</resources>
